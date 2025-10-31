@@ -6,35 +6,82 @@ Text Domain: rayforce-child
 Description: Thème enfant basé sur Rayforce.
 */
 
+/* =====================
+   Styles globaux
+===================== */
+
+/* Paragraphes : texte blanc sur fond noir */
 p{
   color: #ffffff !important;
   background-color: black;
 }
+
+/* =====================
+   Footer
+===================== */
+
+/* Footer enfant : fond semi-transparent blanc */
 .child-footer {
-    background: rgba(255, 255, 255, 0.5); /* blanc à 50% de transparence */
+    background: rgba(255, 255, 255, 0.5); 
 }
 
-#hero-accent{
-  background: transparent !important;
-}
+/* ID footer : fond transparent */
 #footer{
   background: transparent !important;
 }
+
+/* Grid pour organiser les colonnes du footer */
 .footer-grid{
-  display:grid;
-  gap:24px;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  margin:24px 0;
-  font-family: Space Grotesk, Helvetica, Arial, Sans-Serif, serif;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 24px 0;
+  font-family: Space Grotesk, Helvetica, Arial, sans-serif;
 }
-.footer-col { margin-left: 24px;
+
+/* Chaque colonne du footer avec marge à gauche */
+.footer-col { 
+  margin-left: 24px;
 }
-.footer-col h4{ margin:0 0 8px; font-size:1.05rem; }
-.footer-col ul{ list-style:none; padding:0; margin:0; }
-.footer-col ul li{ margin:6px 0; }
-.copy{ margin-top:12px; opacity:.8; }
 
+/* Titres dans les colonnes */
+.footer-col h4{ 
+  margin:0 0 8px; 
+  font-size:1.05rem; 
+}
 
+/* Liste sans puces */
+.footer-col ul{ 
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+}
+
+/* Items de la liste avec espace */
+.footer-col ul li{ 
+  margin:6px 0; 
+}
+
+/* Copyright avec opacité réduite */
+.copy{ 
+  margin-top:12px; 
+  opacity:.8; 
+}
+
+/* =====================
+   Hero accent
+===================== */
+
+/* Bloc hero accent transparent */
+#hero-accent{
+  background: transparent !important;
+}
+
+/* =====================
+   Boutons Kubio et natifs
+===================== */
+
+/* Style des boutons Kubio et natifs */
 .wp-block-kubio-button__link,
 .wp-block-kubio-button__link:link,
 .wp-block-kubio-button__link:visited,
@@ -46,7 +93,7 @@ input[type="submit"] {
   border: none !important;
 }
 
-
+/* Hover des boutons : bleu foncé */
 .wp-block-kubio-button__link:hover,
 button:hover,
 input[type="button"]:hover,
@@ -55,23 +102,40 @@ input[type="submit"]:hover {
   color: #ffffff !important;
 }
 
+/* =====================
+   Icônes Kubio
+===================== */
+
+/* Conteneur externe de l’icône : fond bleu foncé arrondi */
 .wp-block-kubio-icon__outer{
   background-color: #005bb5;
   border-radius: 15px;
 }
 
+/* Icône interne : couleur blanche */
 .wp-block-kubio-icon__inner{
   color: white ;
 }
 
+/* =====================
+   Sections et blocs
+===================== */
+
+/* Fond des blocs principaux */
 .wp-site-blocks {
   background-color: #5a7c9d;
 }
+
+/* Fond des sections Kubio */
 .wp-block-kubio-section__outer{
   background-color: #5a7c9d;
 }
 
-/* --- Header transparent --- */
+/* =====================
+   Header transparent
+===================== */
+
+/* Header enfant : transparent et au-dessus du contenu */
 .child-header {
   background: transparent !important; 
   box-shadow: none;                  
@@ -83,7 +147,7 @@ input[type="submit"]:hover {
   z-index: 100;                       
 }
 
-/* Contenu interne du header */
+/* Contenu interne du header : flex pour aligner menu et bouton */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -91,18 +155,19 @@ input[type="submit"]:hover {
   padding: 20px 40px;
 }
 
-/* Liens de navigation */
+/* Liens de navigation : blanc et transition */
 .main-navigation .menu a {
   color: white;                        
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+/* Hover des liens de navigation : bleu clair */
 .main-navigation .menu a:hover {
   color: #00aaff;
 }
 
-/* Bouton du header */
+/* Bouton du header : semi-transparent et arrondi */
 .btn-header {
   background: rgba(255, 255, 255, 0.15);
   color: white;
@@ -111,6 +176,24 @@ input[type="submit"]:hover {
   text-decoration: none;
 }
 
+/* Hover du bouton du header : plus opaque */
 .btn-header:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+/* =====================
+   Rows Kubio en colonne
+===================== */
+
+/* Row interne : flex column, centré et espacement */
+.wp-block-kubio-row__inner.style-_pD0jMCZe-inner {
+    display: flex !important;           /* force le flex */
+    flex-direction: column !important;  /* empile les colonnes verticalement */
+    align-items: center !important;     /* centre horizontalement */
+    gap: 30px !important;               /* espace entre colonnes */
+}
+
+/* Chaque colonne prend 100% de la largeur du conteneur */
+.wp-block-kubio-row__inner.style-_pD0jMCZe-inner > .wp-block-kubio-column__container {
+    width: 100% !important;
 }
