@@ -1,0 +1,116 @@
+/*
+Theme Name: Rayforce Child
+Template: rayforce
+Version: 1.0.0
+Text Domain: rayforce-child
+Description: Thème enfant basé sur Rayforce.
+*/
+
+p{
+  color: #ffffff !important;
+  background-color: black;
+}
+.child-footer {
+    background: rgba(255, 255, 255, 0.5); /* blanc à 50% de transparence */
+}
+
+#hero-accent{
+  background: transparent !important;
+}
+#footer{
+  background: transparent !important;
+}
+.footer-grid{
+  display:grid;
+  gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  margin:24px 0;
+  font-family: Space Grotesk, Helvetica, Arial, Sans-Serif, serif;
+}
+.footer-col { margin-left: 24px;
+}
+.footer-col h4{ margin:0 0 8px; font-size:1.05rem; }
+.footer-col ul{ list-style:none; padding:0; margin:0; }
+.footer-col ul li{ margin:6px 0; }
+.copy{ margin-top:12px; opacity:.8; }
+
+
+.wp-block-kubio-button__link,
+.wp-block-kubio-button__link:link,
+.wp-block-kubio-button__link:visited,
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: #0073e6 !important; 
+  color: #ffffff !important; 
+  border: none !important;
+}
+
+
+.wp-block-kubio-button__link:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #005bb5 !important; 
+  color: #ffffff !important;
+}
+
+.wp-block-kubio-icon__outer{
+  background-color: #005bb5;
+  border-radius: 15px;
+}
+
+.wp-block-kubio-icon__inner{
+  color: white ;
+}
+
+.wp-site-blocks {
+  background-color: #5a7c9d;
+}
+.wp-block-kubio-section__outer{
+  background-color: #5a7c9d;
+}
+
+/* --- Header transparent --- */
+.child-header {
+  background: transparent !important; 
+  box-shadow: none;                  
+  border: none;                     
+  position: absolute;                
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;                       
+}
+
+/* Contenu interne du header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Liens de navigation */
+.main-navigation .menu a {
+  color: white;                        
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-navigation .menu a:hover {
+  color: #00aaff;
+}
+
+/* Bouton du header */
+.btn-header {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-header:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
